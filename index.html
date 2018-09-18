@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Now Form</title>
+    <link rel="icon" href="img/nf-favicon.png" type="image/png" sizes="13x13">
     <style>
       @font-face {
           font-family: 'aller';
@@ -36,28 +37,30 @@
         .wrapper {
           height: 100%; 
           width: 100%; 
+          float: left;
         }
 
         .message {
           -webkit-box-sizing: border-box;
           -moz-box-sizing: border-box;
           box-sizing: border-box;
-          width: 100%;
-          height:auto;
-          display: block;
+          width: 80%;
+          height:225px;
           position: relative;
           color: #fff;
           padding: 0;
           left:17%;
-          top:20%;
+          float: left;
+          top:25%;
         }
         .content{
           color: #fff;
           padding: 0;
-          margin-top: 180px;
+          margin-top: 40px;
           margin-left: 17%;
           width: 56%;
           font-size: 24px;
+          float: left;
         }
         .content p{
           margin-bottom: 50px;
@@ -83,7 +86,24 @@
         a.contact:hover{
           color:#301fff;
         }
-
+        .typewrite > .wrap{
+          position: relative;
+        }
+        @media (max-width:500px){
+        /*.mob-break{
+          display: block;
+          width: 100%;
+        }*/
+        .message {
+          height:220px;
+          left:10%;
+          top:15%;
+        }
+        .content{
+          width: 80%;
+          margin-left:10%;
+        }
+        }
 </style>
 </head>
 
@@ -92,7 +112,7 @@
 <div class="wrapper">
   <div class="message">
       <h1>
-          <span>now form</span>
+          <span class="mob-break">now form</span>
           <a href="#" class="typewrite" data-period="2000" data-type='[ "a studio", "an identity", "a website", "a space" ]'>
             <span class="wrap"></span>
           </a>
@@ -110,6 +130,7 @@
     
       
     
+</div>
 </div>
 
 <script type="text/javascript">
